@@ -1,0 +1,8 @@
+
+
+# Metrics to quantify privacy content
+
+- [Tweet-scan-post: a system for analysis of sensitive private data disclosure in online social media](https://link.springer.com/article/10.1007/s10115-021-01592-2)
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC8892403/pdf/13688_2022_Article_324.pdf
+- datasets here? 'A behavioural analysis of credulous Twitter users'
+- legal? https://www.trackmyhashtag.com/twitter-dataset

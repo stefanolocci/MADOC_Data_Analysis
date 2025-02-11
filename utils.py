@@ -13,23 +13,30 @@ filenames = [
     "reddit_toxic_madoc.parquet",
 ]
 
-filename = "reddit_greatawakening_madoc.parquet"
-folder = filename.replace('.parquet', '')
-assert filename in filenames
 
-url = f'https://zenodo.org/records/14637314/files/{filename}?download=1'
+def download_madoc_dataset(filename=None):
+    if filename is None:
+        filename = "reddit_greatawakening_madoc.parquet"
+    folder = filename.replace('.parquet', '')
+    assert filename in filenames
 
-# Local filename to save as
-destination = os.path.join(DATADIR, folder, filename)
-if not os.path.exists(destination):
-    print('destination:', destination)
+    url = f'https://zenodo.org/records/14637314/files/{filename}?download=1'
 
-    # Download the file
-    response = requests.get(url, stream=True)
-    if response.status_code == 200:
-        with open(destination, "wb") as file:
-            for chunk in response.iter_content(chunk_size=1024):
-                file.write(chunk)
-        print(f"Download complete: {destination}")
-    else:
-        print(f"Failed to download. Status code: {response.status_code}")
+    # Local filename to save as
+    destination = os.path.join(DATADIR, folder, filename)
+    if not os.path.exists(destination):
+        print('destination:', destination)
+
+        # Download the file
+        response = requests.get(url, stream=True)
+        if response.status_code == 200:
+            with open(destination, "wb") as file:
+                for chunk in response.iter_content(chunk_size=1024):
+                    file.write(chunk)
+            print(f"Download complete: {destination}")
+        else:
+            print(f"Failed to download. Status code: {response.status_code}")
+
+
+if __name__ == '__main__':
+    download_madoc_dataset()

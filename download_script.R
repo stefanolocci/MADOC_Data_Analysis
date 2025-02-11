@@ -1,3 +1,5 @@
+install.packages('devtools')
+
 # Load necessary libraries
 library(rMADOC)   # for downloading and loading the MADOC data
 library(dplyr)    # for data manipulation
