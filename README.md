@@ -9,3 +9,9 @@
 - https://pmc.ncbi.nlm.nih.gov/articles/PMC8892403/pdf/13688_2022_Article_324.pdf
 - datasets here? 'A behavioural analysis of credulous Twitter users'
 - legal? https://www.trackmyhashtag.com/twitter-dataset
+- https://dl.acm.org/doi/pdf/10.1145/3168389
+- 
+
+## More datasets
+- https://huggingface.co/SocialGrep
+- https://www.kaggle.com/datasets/pavellexyr/the-reddit-covid-dataset
