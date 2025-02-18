@@ -15,3 +15,5 @@
 ## More datasets
 - https://huggingface.co/SocialGrep
 - https://www.kaggle.com/datasets/pavellexyr/the-reddit-covid-dataset
+- https://zenodo.org/records/14669616
+- https://zenodo.org/records/10476212
